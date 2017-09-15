@@ -35,18 +35,20 @@
         <p class="job-title hidden"><span class="job-title highlight">Aspiring</span> Junior <span class="job-title highlight">Front-End</span> Developer</p>
       </div>
       <nav class="nav">
-        <ul class="nav-menu">
-          <a href="#aboutme" class="menu-link"><li>O mnie</li></a>
-          <a href="#skillset" class="menu-link"><li>Umiejętności</li></a>
-          <a href="#portfolio" class="menu-link"><li>Portfolio</li></a>
-          <a href="#contact" class="menu-link"><li>Kontakt</li></a>
+        <button class="nav__button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <ul class="nav__menu">
+          <li class="menu__link"><a href="#aboutme">O mnie</a></li>
+          <li class="menu__link"><a href="#skillset">Umiejętności</a></li>
+          <li class="menu__link"><a href="#portfolio">Portfolio</a></li>
+          <li class="menu__link"><a href="#contact">Kontakt</a></li>
+          <button class="menu__button"><i class="fa fa-times" aria-hidden="true"></i></button>
         </ul>
       </nav>
     </section>
     <section class="section section--about" id="aboutme">
       <h2 class="section__heading">O mnie</h2>
       <p class="section__text">Jestem młodą, ambitną i kreatywną osobą. Cały czas staram się pracować nad swoimi umiejętnościami i poznawac nowe technologie oraz narzędzia z zakresu tworzenia stron i aplikacji internetowych. </p>
-      <p class="section__text">Jestem zainteresowany podjęciem pracy jako <span class="highlight">Junior Front-End Developer</span> lub <span class="highlight">stażem</span>.</p>
+      <p class="section__text">Jestem zainteresowany podjęciem pracy jako <span class="highlight--dark">Junior Front-End Developer</span> lub <span class="highlight--dark">stażem</span>.</p>
       <p class="section__text">Chciałbym zdobywac wiedzę pod okiem bardziej doświadczonych developerów.
       Nie straszne mi wyzwania i praca w zespole. Kodowanie sprawia mi przyjemność, a rozwiązany problem to dla mnie kolejny powód do satysfakcji.</p>
     </section>
@@ -99,8 +101,8 @@
       <div class="portfolio__container">
         <div class="project">
           <div class="project__links">
-            <a href=""><span class="portfolio-link__icon fa fa-flash" aria-hidden="true"></span>Live</a>
-            <a href=""><span class="portfolio-link__icon fa fa-code" aria-hidden="true"></span>GitHub</a>
+            <a href="https://introoz37.github.io/kamiennachata"><span class="portfolio-link__icon fa fa-flash" aria-hidden="true"></span>Live</a>
+            <a href="https://github.com/Introoz37/KamiennaChata"><span class="portfolio-link__icon fa fa-code" aria-hidden="true"></span>GitHub</a>
           </div>
           <div class="project__description">
             <h3>Kamienna Chata</h3>
@@ -115,7 +117,7 @@
         <div class="project">
           <div class="project__links">
             <a href=""><span class="portfolio-link__icon fa fa-flash" aria-hidden="true"></span>Live</a>
-            <a href=""><span class="portfolio-link__icon fa fa-code" aria-hidden="true"></span>GitHub</a>
+            <a href="https://github.com/Introoz37/"><span class="portfolio-link__icon fa fa-code" aria-hidden="true"></span>GitHub</a>
           </div>
           <div class="project__description">
             <h3>To-Do List App</h3>
@@ -130,7 +132,7 @@
         <div class="project">
           <div class="project__links">
             <a href=""><span class="portfolio-link__icon fa fa-flash" aria-hidden="true"></span>Live</a>
-            <a href=""><span class="portfolio-link__icon fa fa-code" aria-hidden="true"></span>GitHub</a>
+            <a href="https://github.com/Introoz37/"><span class="portfolio-link__icon fa fa-code" aria-hidden="true"></span>GitHub</a>
           </div>
           <div class="project__description">
             <h3>Rock-Paper-Scissors</h3>
@@ -149,10 +151,10 @@
       <h2 class="section__heading section__heading--contact">Kontakt</h2>
       <div class="methods-container">
         <div class="method">
-          <p class="section__text"><span class="method-icon fa fa-at"></span> niedzielamac@gmail.com</p>
+          <p class="method__text"><span class="method-icon fa fa-at"></span> niedzielamac@gmail.com</p>
         </div>
         <div class="method">
-          <p class="section__text highlight"><span class="method-icon fa fa-phone"></span> 664-314-330</p>
+          <p class="method__text highlight"><span class="method-icon fa fa-phone"></span> 664-314-330</p>
         </div>
         <svg class="handphone-svg"
          xmlns="http://www.w3.org/2000/svg"
@@ -164,6 +166,7 @@
       </div>
     </section>
   </section>
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
