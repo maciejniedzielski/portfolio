@@ -9,9 +9,12 @@ $(document).ready(function(){
     }
   }, 500);
 
+$(window).on("scroll", function(event){
+      event.preventDefault();
+});
   var navPosition = $(".nav").offset().top;
-  
-  $(window).bind('scroll', function () {
+
+  $(window).bind('scroll', function (event) {
     if ($(window).scrollTop() > navPosition) {
         $('.nav').addClass('nav--fixed');
     } else {
@@ -33,10 +36,12 @@ $(document).ready(function(){
 
   $(".nav__button").click(function(){
     $(".nav__menu").toggleClass("toggled");
+    $("body").toggleClass("scrollOff");
   });
 
   $(".menu__button").click(function(){
     $(".nav__menu").toggleClass("toggled");
+    $("body").toggleClass("scrollOff");
   });
 
   var menuLinks= $(".menu__link");
