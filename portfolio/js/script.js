@@ -50,6 +50,7 @@ $(window).on("scroll", function(event){
       var link = menuLinks[i];
       link.addEventListener('click',function(){
                 $(".nav__menu").removeClass("toggled");
+                $("body").removeClass("scrollOff");
       }, false);
     }
 
