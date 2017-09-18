@@ -6,24 +6,26 @@ function Player(name, score){
   this.score = score;
 }
 
-var player = new Player("Player", 0);
-var computer = new Player("Computer", 0);
+let player = new Player("Player", 0);
+let computer = new Player("Computer", 0);
 
-    var i = 0,
+    let i = 0,
         buttons = document.querySelectorAll("button.weapon__btn");
     for (i; i < buttons.length; i++) {
 
         buttons[i].addEventListener("click", function () {
-            var t0 = performance.now();
+            let t0 = performance.now();
             const weapons = ["paper", "rock", "scissors"];
-               var randomNumber = Math.floor(Math.random()*3),
-                   computerChoice = weapons[randomNumber],
-                   playerChoice = this.value,
-                   result = false,
-                   playerStats = document.getElementById('playerStats'),
-                   computerStats = document.getElementById('computerStats'),
-                   playerChoiceBox = document.getElementById('playerChoiceBox'),
-                   computerChoiceBox = document.getElementById('computerChoiceBox');
+            let  randomNumber = Math.floor(Math.random()*3),
+                 computerChoice = weapons[randomNumber],
+                 playerChoice = this.value,
+                 result = false;
+
+            const playerStats = document.getElementById('playerStats'),
+                  computerStats = document.getElementById('computerStats'),
+                  playerChoiceBox = document.getElementById('playerChoiceBox'),
+                  computerChoiceBox = document.getElementById('computerChoiceBox'),
+                  resultText = document.getElementById('result-text');
 
                   //Getting result of battle |true=win, false=lose|
                    switch(playerChoice){
@@ -135,21 +137,21 @@ var computer = new Player("Computer", 0);
 
                   //Checking and displaying result of battle
                    if (result) {
-                     document.getElementById('result-text').innerHTML="You WIN!";
+                     resultText.innerHTML="You WIN!";
                      player.score+=1;
                      playerStats.innerHTML=player.score;
                      showChoice();
                      win();
                      console.log("You WIN!");
                    }
-                   else if(computerChoice==playerChoice){
-                     document.getElementById('result-text').innerHTML="You DRAW!";
+                   else if(computerChoice == playerChoice){
+                     resultText.innerHTML="You DRAW!";
                      showChoice();
                      draw();
                      console.log("You DRAW!");
                    }
                    else {
-                     document.getElementById('result-text').innerHTML="You LOSE!";
+                     resultText.innerHTML="You LOSE!";
                      computer.score+=1;
                      computerStats.innerHTML=computer.score;
                      showChoice();
@@ -174,7 +176,7 @@ var computer = new Player("Computer", 0);
                       reset();
                    }
 
-                   var t1 = performance.now();
+                   let t1 = performance.now();
                    console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.");
                 }, false);
 
