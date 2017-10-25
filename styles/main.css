@@ -415,60 +415,6 @@ body{
   font-size: 2.5rem;
   transition: transform 1.3s linear;
 }
-.nav{
-  width:100%;
-  height: auto;
-  position: absolute;
-  background: transparent;
-  bottom: -5px;
-  top: auto;
-  z-index: 1;
-}
-.nav--fixed{
-  height: 60px;
-  position: fixed;
-  top: 0;
-  opacity: 0.9;
-}
-.nav--fixed::after{
-  content: '';
-  width: 100%;
-  height: 100px;
-  background: #202533;
-  position: absolute;
-  z-index: -1;
-  bottom: 30px;
-  transform-origin: left bottom;
-  transform: skewY(2deg);
-}
-.nav__menu{
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 0.5rem 5rem;
-}
-.nav__menu li{
-  margin: 0;
-  padding: 0.5rem;
-  min-width: 130px;
-}
-.menu__link a{
-  font-size: 1.2rem;
-  color: #ffffff;
-}
-.menu__link a:hover{
-  color: #00ffff;
-  text-decoration: none;
-}
-.nav__button{
-  display: none;
-}
-.menu__button{
-  display: none;
-}
 .section--links{
   width: 70px;
   height: 100vh;
@@ -502,10 +448,7 @@ body{
   padding: 1rem;
   box-sizing: border-box;
 }
-.portfolio__container{
-  width: 50%;
-  margin: 0 auto;
-}
+
 .project__links, .project__description{
   width: 50%
 }
@@ -558,5 +501,67 @@ path{
   .nav--fixed::after{
     height: 100px;
     bottom: 10px;
+  }
+}
+@media (min-width: 1050px){
+  .nav{
+    width:100%;
+    height: auto;
+    position: absolute;
+    background: transparent;
+    bottom: -5px;
+    top: auto;
+    z-index: 1;
+  }
+  .nav--fixed{
+    height: 60px;
+    position: fixed;
+    top: 0;
+    opacity: 0.9;
+  }
+  .nav--fixed::after{
+    content: '';
+    width: 100%;
+    height: 100px;
+    background: #202533;
+    position: absolute;
+    z-index: -1;
+    bottom: 25px;
+    transform-origin: left bottom;
+    transform: skewY(2deg);
+  }
+  .nav__menu{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0.5rem 5rem;
+  }
+  .nav__menu li{
+    margin: 0;
+    padding: 0.5rem;
+    min-width: 130px;
+  }
+  .menu__link a{
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  .menu__link a:hover{
+    color: #00ffff;
+    text-decoration: none;
+  }
+  .nav__button{
+    display: none;
+  }
+  .menu__button{
+    display: none;
+  }
+}
+@media(min-width: 850px){
+  .portfolio__container{
+    width: 50%;
+    margin: 0 auto;
   }
 }
