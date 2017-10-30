@@ -222,7 +222,6 @@ a.link:hover {
   align-items: center;
   align-content: center;
   justify-content: flex-start;
-
 }
 .skill{
   text-align: center;
@@ -230,6 +229,10 @@ a.link:hover {
   height: auto;
   padding: 1rem;
   box-sizing: border-box;
+}
+p.skill__text{
+  text-align: center;
+  margin: 0.8rem 0.5rem;
 }
 .section--portfolio{
   background: #ffffff;
