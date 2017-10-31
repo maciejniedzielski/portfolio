@@ -375,19 +375,25 @@ p.skill__text{
 *{
   font-size: 16px;
 }
-body{
+/*body{
   display:flex;
   flex-direction: row;
   align-items: center;
   align-content: center;
   justify-content: center;
-}
+}*/
 .sidebar{
   width: 70px;
   height: 100vh;
+  position: fixed;
+  left:0;
 }
 .main{
   width: calc(100% - 70px);
+}
+header{
+  display: block;
+    width: calc(100% - 70px);
 }
 .section{
   width: 90%;
