@@ -390,10 +390,11 @@ p.skill__text{
 }
 .main{
   width: calc(100% - 70px);
+  margin-left: 70px;
 }
 header{
   display: block;
-    width: calc(100% - 70px);
+  width: calc(100% - 70px);
 }
 .section{
   width: 90%;
