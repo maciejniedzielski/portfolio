@@ -292,7 +292,8 @@ p.skill__text{
           margin: 1rem auto;
         }
         .technology{
-          margin: auto 0.1rem;
+          display: inline-block;
+          margin: 0.1rem;
           padding: 0.3rem;
           box-sizing: border-box;
           background: #202533;
