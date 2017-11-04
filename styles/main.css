@@ -375,13 +375,6 @@ p.skill__text{
 *{
   font-size: 16px;
 }
-/*body{
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}*/
 .sidebar{
   width: 70px;
   height: 100vh;
@@ -412,6 +405,7 @@ header{
   width: 100%;
   min-height: 200px;
   height: 60vh;
+  min-height: 340px;
   animation-name: fadeOut;
   animation-duration: 3s;
 }
@@ -548,7 +542,7 @@ path{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 0rem;
   }
   .nav__menu li{
     margin: 0;
