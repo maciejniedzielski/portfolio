@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
   setTimeout(function(){
-    if($("ul.text-decoration").hasClass("hidden")){
-        $("ul.text-decoration").removeClass("hidden");
+    if($("h1.text-decoration").hasClass("hidden")){
+        $("h1.text-decoration").removeClass("hidden");
     }
     if($(".job-title").hasClass("hidden")){
         $(".job-title").removeClass("hidden");
@@ -31,6 +31,7 @@ $(window).on("scroll", function(event){
         $('html, body').stop().animate({
             scrollTop: target.offset().top-50
         }, 500);
+        window.location.hash = this.hash;
     }
   });
 
