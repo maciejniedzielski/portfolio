@@ -570,3 +570,12 @@ path{
     margin: 0 auto;
   }
 }
+
+@media(max-width: 360px){
+  .text-decoration span{
+    font-size: 1rem;
+  }
+  .job-title {
+    font-size: 0.7rem;
+  }
+}
