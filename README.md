@@ -1,4 +1,4 @@
-# introoz37.github.io
+# maciejniedzielski.github.io
 Maciej Niedzielski Portfolio site
-[Live](https://introoz37.github.io/)
+[Live](https://maciejniedzielski.github.io/)
 
